@@ -1,5 +1,5 @@
 {
-  "name": "react-spreadsheet-import",
+  "name": "react-spreadsheet-import-dds",
   "version": "2.0.6",
   "description": "React spreadsheet import for xlsx and csv files with column matching and validation",
   "main": "./dist-commonjs/index.js",
@@ -20,7 +20,7 @@
     "build": "rollup -c rollup.config.ts",
     "build-storybook": "build-storybook -o docs-build",
     "release:minor": "git checkout master && git pull && npm run test && npm run ts && npm run build && npm version patch && git add -A && git push && git push --tags && npm publish",
-    "release:major": "git checkout master && git pull && npm run test && npm run ts && npm run build && npm version major && git add -A && git push && git push --tags && npm publish",
+    "release:major": "npm version major && git add -A && git push && git push --tags && npm publish",
     "clean": "rimraf dist"
   },
   "repository": {
@@ -45,21 +45,21 @@
   },
   "homepage": "https://github.com/UgnisSoftware/react-spreadsheet-import#readme",
   "peerDependencies": {
-    "@chakra-ui/react": "^2.2.1",
+    "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "framer-motion": "^4.1.17 || ^6.3.13",
+    "framer-motion": "^6.3.13",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "chakra-react-select": "^4.0.3",
-    "chakra-ui-steps": "^1.7.3",
+    "chakra-react-select": "^4.4.0",
+    "chakra-ui-steps": "^1.8.0",
     "js-levenshtein": "^1.1.6",
     "lodash": "^4.17.21",
     "react-data-grid": "7.0.0-beta.13",
     "react-dropzone": "^14.2.1",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.6.0",
     "uuid": "^8.3.2",
     "xlsx": "^0.18.5"
   },
