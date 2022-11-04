@@ -1,9 +1,7 @@
 import { chakra, useStyleConfig, Flex } from "@chakra-ui/react"
 import { dataAttr } from "@chakra-ui/utils"
-import { motion } from "framer-motion"
 import { CgCheck } from "react-icons/cg"
 
-const MotionFlex = motion(Flex)
 
 const animationConfig = {
   transition: {
@@ -32,9 +30,7 @@ export const MatchIcon = (props: MatchIconProps) => {
       data-testid="column-checkmark"
     >
       {props.isChecked && (
-        <MotionFlex {...animationConfig}>
           <CgCheck size="1.5rem" />
-        </MotionFlex>
       )}
     </chakra.div>
   )
